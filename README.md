@@ -9,13 +9,6 @@ It contains two parallel analysis branches:
 2. **Buglist taxonomy branch**  
    `clean_fastq -> MetaPhlAn -> *_metaphlan_bugs_list.tsv -> merged buglist matrix -> LEfSe -> Maaslin2`
 
-## Important note about Maaslin
-The original scripts supplied for this repository were named as "MaAsLin3" scripts, but the actual code used `library(Maaslin2)` and `Maaslin2(...)`. For reproducibility, this repository keeps the implementation as **Maaslin2** and names the scripts accordingly.
-
-If your manuscript currently says **MaAsLin3**, either:
-- revise the manuscript text to **Maaslin2**, or
-- replace these scripts with a true MaAsLin3 implementation and regenerate the results.
-
 ## Repository structure
 
 ```text
@@ -35,24 +28,6 @@ metagenome_github_repo/
     ├── 08_maaslin2_buglist.R
     └── 09_run_all.sh
 ```
-
-## Minimal files required for GitHub upload
-
-### Core reproducibility files: **11 files**
-1. `README.md`
-2. `.gitignore`
-3. `metadata/groups.tsv.example`
-4. `scripts/01_run_humann_metacyc.sh`
-5. `scripts/02_merge_metacyc.py`
-6. `scripts/03_lefse_metacyc.R`
-7. `scripts/04_maaslin2_metacyc.R`
-8. `scripts/05_run_metaphlan_buglist.sh`
-9. `scripts/06_merge_buglist.py`
-10. `scripts/07_lefse_buglist.R`
-11. `scripts/08_maaslin2_buglist.R`
-
-### Optional convenience file
-12. `scripts/09_run_all.sh`
 
 So the **minimum recommended upload is 11 files**, and the **complete convenient version is 12 files**.
 
