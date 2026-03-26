@@ -196,23 +196,3 @@ results/
 ├── lefse_buglist/
 └── maaslin2_buglist/
 ```
-
-## What you should NOT upload to GitHub
-
-Do not upload:
-- raw FASTQ files
-- huge HUMAnN3 intermediate files
-- full result directories containing large binary files
-- absolute local paths from your workstation or server
-
-Upload only the workflow code, example metadata, and a short README.
-
-## What is still missing and should be checked by you
-
-Before final submission, please check these items:
-1. Whether your manuscript should say **Maaslin2** or **MaAsLin3**.
-2. Whether your actual group labels are really `NO` and `YES`.
-3. Whether you want to keep only unstratified MetaCyc pathways.
-4. Whether the server-side software versions should be documented in the manuscript or supplementary methods.
-5. Whether you want to add a `sessionInfo()` text file from R and `humann --version` / `metaphlan --version` outputs as supplementary reproducibility records.
-
